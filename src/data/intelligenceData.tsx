@@ -8,7 +8,7 @@ import {
 export interface IntelligenceField {
   key: string;
   label: string;
-  value?: string;
+  value?: string | undefined;
 }
 export interface IntelligenceSection {
   id: string;
