@@ -22,7 +22,7 @@ describe("intelligence", () => {
     expect(buildIntelligenceSections()).toHaveLength(22);
   });
   it("never exposes CTC, stipend or selection ratio", () => {
-    const c = SEED_COMPANIES[0];
+    const c = SEED_COMPANIES[0]!;
     const p = normalizeCompanyProfile({ ...c.full_json, ctc: "10", stipend: "1", selection_ratio: "2" }, c.short_json);
     expect(Object.keys(p.fields).some((k) => /ctc|stipend|selection_ratio/.test(k))).toBe(false);
   });

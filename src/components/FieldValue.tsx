@@ -9,7 +9,7 @@ export function NotAvailable() {
   return <span className="inline-flex rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground">Not Available</span>;
 }
 
-export function FieldValue({ value }: { value?: string }) {
+export function FieldValue({ value }: { value?: string | undefined }) {
   const v = (value ?? "").trim();
   if (isNullish(v)) return <NotAvailable />;
 
