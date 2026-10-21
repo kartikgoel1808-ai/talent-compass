@@ -1,6 +1,5 @@
 // Phase 1 seed data (Accenture reference record). Phase 2 swaps this for database rows.
 export const SEED_COMPANIES = [
-export const SEED_COMPANIES = [
   {
     company_id: 1,
     short_json: {
